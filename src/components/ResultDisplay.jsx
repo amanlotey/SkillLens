@@ -12,7 +12,7 @@ const ResultDisplay = ({
         {missingSkills.length === 0 ? (
           <p className="text-gray-300 italic">No missing skills found.</p>
         ) : (
-          <ul className="list-disc list-inside space-y-1 text-[#f8f8f8]">
+          <ul className="list-none space-y-1 text-[#f8f8f8]">
             {missingSkills.map((skill, idx) => (
               <li key={idx}>{skill}</li>
             ))}
@@ -26,7 +26,7 @@ const ResultDisplay = ({
         {recommendedCourses.length === 0 ? (
           <p className="text-gray-300 italic">No recommended courses found.</p>
         ) : (
-          <ul className="list-disc list-inside space-y-1 text-[#f8f8f8]">
+          <ul className="list-none space-y-1 text-[#f8f8f8]">
             {recommendedCourses.map((course, idx) => (
               <li key={idx}>{course}</li>
             ))}
